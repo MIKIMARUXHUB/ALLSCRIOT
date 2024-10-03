@@ -2406,7 +2406,7 @@ spawn(function()
         end)
     end
 end)
-local CakePos = CFrame.new(-2091.911865234375, 70.00884246826172, -12142.8359375)
+local CakePos = CFrame.new(-1885.17456, 333.800079, -12416.5674, -5.8889389e-05, 0.994514465, -0.104598977, -1, -5.8889389e-05, 3.09199095e-06, -3.09199095e-06, 0.104598977, 0.994514465)
 spawn(function()
     while wait() do
         if CakeFMode == "No Quest" and _G.AutoDoughtBoss then
@@ -2468,7 +2468,7 @@ spawn(function()
                         end
                                 MagnetDought = false
                                 UnEquipWeapon(_G.SelectWeapon)
-                                ATween(CFrame.new(-2091.911865234375, 70.00884246826172, -12142.8359375))
+                                ATween(CFrame.new(-2137.66699, 69.3312531, -12326.2383, -0.965929747, 0, -0.258804798, 0, 1, 0, 0.258804798, 0, -0.965929747))
                                 if game:GetService("ReplicatedStorage"):FindFirstChild("Cookie Crafter") then
                                     ATween(game:GetService("ReplicatedStorage"):FindFirstChild("Cookie Crafter").HumanoidRootPart.CFrame * CFrame.new(2,20,2)) 
                                 else
@@ -2746,7 +2746,7 @@ Main:Toggle("เริ่ม ออโต้ ฟาร์ม ตามที่�
     _G.Auto_Bone = value
     StopTween(_G.Auto_Bone)
 end)
-local BonePos = CFrame.new(-9506.234375, 172.130615234375, 6117.0771484375)
+local BonePos = CFrame.new(-8998.10156, 548.913513, 6006.05078, 0.0224964619, -0.574222803, -0.818389952, -0.996195436, 0.0560624599, -0.0667202771, 0.0841932297, 0.816777349, -0.570776939)
 spawn(function()
     while wait() do 
         if BoneFMode == "No Quest" and _G.Auto_Bone and World3 then
@@ -2782,7 +2782,7 @@ spawn(function()
             end
                     UnEquipWeapon(_G.SelectWeapon)
                     StartMagnetBoneMon = false
-                    ATween(CFrame.new(-9506.234375, 172.130615234375, 6117.0771484375))
+                    ATween(CFrame.new(-8998.10156, 548.913513, 6006.05078, 0.0224964619, -0.574222803, -0.818389952, -0.996195436, 0.0560624599, -0.0667202771, 0.0841932297, 0.816777349, -0.570776939))
                     for i,v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do 
                         if v.Name == "Reborn Skeleton" then
                             ATween(v.HumanoidRootPart.CFrame * CFrame.new(2,20,2))
@@ -2799,7 +2799,7 @@ spawn(function()
         end
     end
 end)  
-local BoneQuestPos = CFrame.new(-9516.99316, 172.017181, 6078.46533, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+local BoneQuestPos = CFrame.new(-8998.10156, 548.913513, 6006.05078, 0.0224964619, -0.574222803, -0.818389952, -0.996195436, 0.0560624599, -0.0667202771, 0.0841932297, 0.816777349, -0.570776939)
 spawn(function()
     while wait() do
         if  BoneFMode == "Quest" and _G.Auto_Bone and World3  then

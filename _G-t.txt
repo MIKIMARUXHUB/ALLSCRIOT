@@ -2746,7 +2746,7 @@ Main:Toggle("เริ่ม ออโต้ ฟาร์ม ตามที่�
     _G.Auto_Bone = value
     StopTween(_G.Auto_Bone)
 end)
-local BonePos = CFrame.new(-8998.10156, 548.913513, 6006.05078, 0.0224964619, -0.574222803, -0.818389952, -0.996195436, 0.0560624599, -0.0667202771, 0.0841932297, 0.816777349, -0.570776939)
+local BonePos = CFrame.new(-9522.62695, 1625.13452, 6493.85645, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 spawn(function()
     while wait() do 
         if BoneFMode == "No Quest" and _G.Auto_Bone and World3 then
@@ -2782,7 +2782,7 @@ spawn(function()
             end
                     UnEquipWeapon(_G.SelectWeapon)
                     StartMagnetBoneMon = false
-                    ATween(CFrame.new(-8998.10156, 548.913513, 6006.05078, 0.0224964619, -0.574222803, -0.818389952, -0.996195436, 0.0560624599, -0.0667202771, 0.0841932297, 0.816777349, -0.570776939))
+                    ATween(CFrame.new(-9506.234375, 172.130615234375, 6117.0771484375))
                     for i,v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do 
                         if v.Name == "Reborn Skeleton" then
                             ATween(v.HumanoidRootPart.CFrame * CFrame.new(2,20,2))
@@ -2799,7 +2799,7 @@ spawn(function()
         end
     end
 end)  
-local BoneQuestPos = CFrame.new(-8998.10156, 548.913513, 6006.05078, 0.0224964619, -0.574222803, -0.818389952, -0.996195436, 0.0560624599, -0.0667202771, 0.0841932297, 0.816777349, -0.570776939)
+local BoneQuestPos = CFrame.new(-9516.99316, 172.017181, 6078.46533, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 spawn(function()
     while wait() do
         if  BoneFMode == "Quest" and _G.Auto_Bone and World3  then
@@ -3814,11 +3814,11 @@ task.spawn(function()
 	end
 end)
 
-    Set:Toggle("ตีเร็ว [ แย่งสคริปเสียเงินฟาร์มได้แบบชิวๆ ]", false, function(value)
+    Set:Toggle("ตีเร็ว [ SHIN X HUB ตอนอัพเดทที่ 1 ]", false, function(value)
         UFFF = value
     end)
     
-    Set:Toggle("ตีเร็ว [ เร็วจัด ]", false, function(value)
+    Set:Toggle("ตีเร็ว [ SHIN X HUB ตอนอัพเดทที่ 2 ]", false, function(value)
         _G.FastAttack2 = value
     end)
     
@@ -3834,7 +3834,7 @@ end)
     end
 end)
 
-    Set:Toggle("ตีเร็ว [ ไม่เร็วมาก ]", false, function(value)
+    Set:Toggle("ตีเร็ว [ แย่งสคริปเสียเงินฟาร์มได้ ]", false, function(value)
         _G.FastAttack4 = value
     end)
 
@@ -4773,8 +4773,9 @@ end)
 Farm:Toggle("ออโต้ โยรุเล็ก [ ต้องเสกแอดมินก่อน ]", false, function(value)
     _G.AutoDarkDagger = value
     StopTween(_G.AutoDarkDagger)
+    local AdminPos = CFrame.new(-12463.6025, 395.503906, -7566.08301, 0.0175017118, -0, -0.999846935, 0, 1, -0, 0.999846935, 0, 0.0175017118)
 end)
-local AdminPos = CFrame.new(-5344.822265625, 423.98541259766, -2725.0930175781)
+local AdminPos = CFrame.new(-5063.6709, 319.782166, -3008.2168, -0.927113533, 0, -0.374780655, 0, 1, 0, 0.374780655, 0, -0.927113533)
 spawn(function()
     pcall(function()
         while wait() do

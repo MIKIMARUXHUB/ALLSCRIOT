@@ -2553,27 +2553,6 @@ end
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
 local Farming = Tabs.Main:AddSection("Farming")
-local listfastattack = {'Katakuri','Bone','Level'}
-
-    local DropdownFarmMode = Tabs.Main:AddDropdown("DropdownFarmMode", {
-        Title = "Select Farm",
-        Description = "",
-        Values = listfarmmode,
-        Multi = false,
-        Default = 1,
-    })
-    DropdownFarmMode:SetValue("Level")
-    DropdownFarmMode:OnChanged(function(Value)
-    _G.FarmMode = Value
-	if _G.FarmMode == "Level" then
-		_G.AutoLevel = Value
-	elseif _G.FarmMode == "Katakuri" then
-		_G.CakePrince = Value
-	elseif _G.FarmMode == "Bone" then
-		_G.AutoBone = Value
-	 end
- end)
- 
 local listfastattack = {'Normal','Slow','Super','Low'}
 
     local DropdownDelayAttack = Tabs.Main:AddDropdown("DropdownDelayAttack", {
